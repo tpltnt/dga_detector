@@ -23,7 +23,11 @@ def entropy(string):
 
 def count_consonants(string):
     """
-    Counting consonants in a string
+    Counting consonants in a string.
+
+    :param string: input string
+    :type string: str
+    :retuns: int (number of consonants)
     """
     consonants = re.compile("[bcdfghjklmnpqrstvwxyz]")
     count = consonants.findall(string)
