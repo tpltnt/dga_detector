@@ -5,7 +5,11 @@ import re
 
 def entropy(string):
     """
-    Calculates the Shannon entropy of a string
+    Calculates the Shannon entropy of a string.
+
+    :param string: input string
+    :type string: str
+    :returns: float
     """
 
     # get probability of chars in string
