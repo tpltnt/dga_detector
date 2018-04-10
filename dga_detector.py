@@ -20,6 +20,14 @@ def read_file(filename):
 
 
 def domain_check(domain):
+    """
+    Check a given domain. This function operates on the second level domain, e.g. on 'example' of 'example.net'.
+
+    :param domain: domain to check
+    :type domain: str
+    :returns: tuple (second level domain  - str, entropy - float, number of consonants - int, length - int), may be empty
+    :note: Domains shorter than six characters, localized domains (i.e. 'xn-') and onion services (i.e. '.onion') are not processed.
+    """
     # skip tor domains
     if domain.endswith(".onion"):
         print("Tor domains is ignored...")
