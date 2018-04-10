@@ -7,6 +7,13 @@ import json
 
 
 def read_file(filename):
+    """
+    Read each line from a file (with newline removed).
+
+    :param filename: file name/path to read from
+    :type filename: str
+    :returns: generator of str
+    """
     with open(filename) as f:
         for line in f:
             yield line.strip("\n")
