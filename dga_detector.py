@@ -48,7 +48,7 @@ def domain_check(domain):
     return domain_without_sub, domain_entropy, domain_consonants, domain_length
 
 
-def main():
+if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="DGA domain detection")
     parser.add_argument("-d", "--domain", help="Domain to check")
     parser.add_argument("-f", "--file", help="File with domains. One per line")
@@ -108,4 +108,3 @@ _  /_/ // /_/ / _  ___ |      _  /_/ //  __/ /_ /  __/ /__ / /_ / /_/ /  /
 /_____/ \____/  /_/  |_|      /_____/ \___/\__/ \___/\___/ \__/ \____//_/
         ''')
         parser.print_help()
-main()
