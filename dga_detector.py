@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import pickle
 from gib import gib_detect_train
 from dga_routines import count_consonants, entropy
